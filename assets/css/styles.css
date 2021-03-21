@@ -1,0 +1,744 @@
+/*---------- Reset -*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    box-sizing: border-box !important;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box !important;
+}
+
+input:focus {
+    outline: none;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/*-------------colors*/
+
+:root {
+    --light-gray: #fafafa;
+    --light-gray50: rgba(250, 250, 250, 0.51);
+    --gray50: rgba(112, 112, 112, 0.51);
+    --gray: #707070;
+    --gray10: rgba(112, 112, 112, 0.11);
+    --dark-gray: #181818;
+    --dark-gray50: rgba(24, 24, 24, 0.5);
+    --nude: #F5DAC9;
+    --nude50: rgba(245, 218, 201, 0.51);
+    --nude0: rgba(245, 218, 201, 0);
+    --dark-nude: #ecb193;
+    --white: white;
+    --white25: rgba(255, 255, 255, 0.25);
+    --black: black;
+    --blue: rgba(76, 82, 93, 0.5);
+    --light-blue: rgba(76, 82, 93, 0.31);
+    --dark-blue: #09101e;
+    --mid-blue: rgba(23, 46, 78, 0.7);
+}
+
+
+/*-------------disable*/
+
+.disable-selection {
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*-------------Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 5px !important;
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px !important;
+    margin: 15px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #272C48 !important;
+    border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9496A4 !important;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 5px !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*-------------Font*/
+
+h1, h2, h3, h4, h5, h6, input, textarea, p, button, body, * {
+    font-family: 'Montserrat' !important;
+    color: black !important;
+}
+
+h1 {
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 100;
+}
+
+h3 a {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 100;
+}
+
+h4 {
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+span, a, button, textarea, p, body {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+/*-------------Foundation*/
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    position: fixed;
+    top: 0 !important;
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding: 50px 250px;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.foot-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.foot-items ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.foot-items li {
+    color: white !important;
+    margin-left: 20px;
+}
+
+.foot-items li:hover {
+    text-decoration: underline !important;
+}
+
+.foot-items a {
+    color: white !important;
+}
+
+.nav-items a {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.social {
+    margin-left: 20px;
+}
+
+.social a {
+    margin-left: 15px;
+}
+
+.nav-items ul {
+    display: flex;
+}
+
+.nav-items li {
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.nav-items li:hover {
+    text-decoration: underline;
+}
+
+.nav-items li:before {
+    content: "-";
+    text-decoration: none !important;
+}
+
+.main {
+    display: flex !important;
+    height: 100%;
+    max-height: max-content;
+    overflow: hidden;
+}
+
+.main-in {
+    display: flex !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    background: white;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.main-sections {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 250px 0 250px;
+}
+
+.main-sections h1 {
+    margin-bottom: 26px;
+}
+
+.images {
+    padding: 0;
+    margin: 50px 0 0 0;
+
+}
+
+.images img {
+    width: 18%;
+}
+
+.timeline-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    min-height: 100px;
+    align-items: start
+}
+
+.timeline-details {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 1;
+}
+
+.story-details {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    margin: 50px 0;
+    justify-content: space-between;
+}
+
+.story-details img {
+    width: 38%;
+    height: auto !important;
+}
+
+.story-details p {
+    width: 58%;
+}
+
+.no-image p {
+    width: 100%;
+}
+
+.just-image {
+    justify-content: center;
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    background: black;
+    width: 100%;
+    min-height: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 50px;
+}
+
+.story {
+    overflow: hidden;
+    max-height: 120vh;
+    transition: 1s max-height ease;
+}
+
+.show {
+    overflow: visible;
+    max-height: max-content;
+    transition: 1s max-height ease;
+}
+
+.show-more {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: white 0 0 50px
+}
+
+#show-more {
+    width: fit-content;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.down-arrow {
+    height: 100%;
+    padding: 10px;
+}
+
+#show-more:hover {
+    text-decoration: underline;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    height: 100%;
+    padding: 10px;
+}
+
+.menu-btn svg {
+    height: 100%;
+    width: auto;
+}
+
+.timeline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+}
+
+.timeline li {
+    float: left;
+    text-align: center;
+    width: 150px;
+    position: relative;
+}
+
+.timeline li:before {
+    content: counter(step);
+    counter-increment: step;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    display: block;
+    border-radius: 100%;
+    border: 1px solid #CCC;
+    margin: 0 auto 15px auto;
+    background: #fff;
+}
+
+.timeline li:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #DDD;
+    display: block;
+    position: absolute;
+    top: 17.5px;
+    left: 50%;
+    z-index: -1;
+}
+
+.timeline li:last-child:after {
+    content: none;
+}
+
+.timeline li.active {
+    color: #8cc413;
+}
+
+.timeline li:first-child:before {
+    border-color: #8cc413;
+}
+
+.timeline li:first-child:after {
+    background: #8cc413;
+}
+
+.pricing {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.pricing img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+
+@media all and (max-width: 999px) {
+
+    /*-------------Font*/
+    h1, h2, h3, h4, h5, h6, input, textarea, p, button, body, * {
+        font-family: 'Segoe UI', sans-serif !important;
+        color: black !important;
+    }
+
+    h1 {
+        font-size: 7vw;
+        line-height: 9.5vw;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 52px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 6vw;
+        line-height: 8vw;
+        font-weight: 600;
+    }
+
+    h3 a {
+        font-size: 6vw;
+        line-height: 8vw;
+        font-weight: 600;
+        color: rebeccapurple !important;
+    }
+
+    h4 {
+        font-size: 46px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    h5 {
+        font-size: 46px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 46px;
+        line-height: 60px;
+        font-weight: 500;
+    }
+
+    span, a, button, textarea, p, body {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 100;
+    }
+
+
+    .nav {
+        padding: 20px;
+    }
+
+    .main-sections {
+        padding: 20px;
+    }
+
+    .nav-items {
+        position: fixed;
+        width: 100%;
+        height: max-content;
+        display: none;
+        flex-direction: column;
+        background: white;
+        top: 80px;
+        left: 0;
+        padding: 2vw 10vw 3vw 10vw;
+        z-index: 5;
+    }
+
+    .nav-items ul {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-items li a {
+        font-weight: 400 !important;
+        font-size: 5vw;
+    }
+
+    .nav-items li {
+        margin: 2vw !important;
+    }
+
+    .images img {
+        width: 48%;
+    }
+
+    .story-details {
+        flex-direction: column;
+        /*margin-bottom: 50px;*/
+        margin-top: 0;
+    }
+
+    .story-details img {
+        width: 100%
+    }
+
+    .story-details p {
+        width: 100%
+    }
+
+    .timeline-div {
+        display: none;
+    }
+
+    .social {
+        margin-left: 0;
+        justify-content: center;
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .foot-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        height: max-content;
+    }
+
+    .foot-items a {
+        font-size: 3vw;
+    }
+
+    .foot-items li {
+        margin: 0 10px;
+    }
+
+    .social a {
+        margin: 0 10px;
+    }
+}
+
+
+@media all and (min-width: 1200px) and (max-width: 1600px) {
+
+    span, a, button, textarea, p, body {
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 100;
+    }
+
+
+    h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 44px;
+    }
+
+    h3 a {
+        font-size: 28px;
+        line-height: 44px;
+    }
+
+    h4 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    h5 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    h6 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .nav {
+        padding: 50px 100px;
+    }
+
+    .main-sections {
+        padding: 75px 100px 0 100px;
+    }
+
+}
+
+@media all and (min-width: 1000px) and (max-width: 1199px) {
+
+    span, a, button, textarea, p, body {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 100;
+    }
+
+
+    h1 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 44px;
+    }
+
+    h3 a {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    h4 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    h5 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    h6 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .nav {
+        padding: 50px 50px;
+    }
+
+    .main-sections {
+        padding: 50px 50px 0 50px;
+    }
+
+}
+
+h3, p{
+    text-align: justify!important;
+}
