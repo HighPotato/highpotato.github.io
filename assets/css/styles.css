@@ -282,7 +282,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 150px 250px 0 250px;
+    padding: 40px 250px 0 250px;
 }
 
 .main-sections h1 {
@@ -319,7 +319,7 @@ body {
     display: flex;
     width: 100%;
     height: max-content;
-    margin: 50px 0;
+    margin: 10px 0;
     justify-content: space-between;
 }
 
@@ -379,7 +379,8 @@ body {
 
 #show-more {
     width: fit-content;
-    background: none;
+    background: #dcdcdc;
+    border-radius: 5px;
     border: none;
     font-size: 26px;
     cursor: pointer;
